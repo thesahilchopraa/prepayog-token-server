@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: prepayog-token-server
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: APP_ID
+        sync: false
+      - key: APP_CERTIFICATE
+        sync: false
